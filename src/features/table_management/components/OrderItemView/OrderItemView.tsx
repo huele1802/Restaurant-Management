@@ -2,18 +2,18 @@ import { Flex, Typography } from "antd"
 import React from "react"
 import { Counter } from "@features/table_management/components"
 import type { OrderItem } from "@shared/types/order"
-import styles from "./OrderItemForm.module.css"
+import styles from "./OrderItemView.module.css"
 
 const { Title, Text } = Typography
 
-interface OrderItemProps {
+interface OrderItemViewProps {
     item: OrderItem
     key: number
     onQuantityChange: (foodId: number, quantity: number) => void
     last: boolean
 }
 
-export const OrderItemForm: React.FC<OrderItemProps> = ({
+export const OrderItemView: React.FC<OrderItemViewProps> = ({
     item,
     key,
     onQuantityChange,

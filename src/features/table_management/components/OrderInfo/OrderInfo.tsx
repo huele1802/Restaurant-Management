@@ -2,17 +2,17 @@ import { formatDateTimeToDate } from "@core/utils/formatDateTime"
 import type { Order } from "@shared/types/order"
 import { Flex, Tag, Typography } from "antd"
 import React from "react"
-import styles from "./InformationOrder.module.css"
+import styles from "./OrderInfo.module.css"
 
 const { Title, Text } = Typography
 
-interface InformationOrderProps {
+interface OrderInfoProps {
     table: string
     floor: number
     order: Order
 }
 
-export const InformationOrder: React.FC<InformationOrderProps> = ({
+export const OrderInfo: React.FC<OrderInfoProps> = ({
     table,
     floor,
     order,

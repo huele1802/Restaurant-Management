@@ -14,7 +14,7 @@ const AppRouter: React.FC = () => {
             <Suspense fallback={<LoadingSpinner />}>
                 <Routes>
                     <Route path="/" element={<DashboardRoutes />} />
-                    <Route path="/menu" element={<TableRoutes />} />
+                    <Route path="/table" element={<TableRoutes />} />
 
                     <Route path="/home" element={<Navigate to="/" replace />} />
 

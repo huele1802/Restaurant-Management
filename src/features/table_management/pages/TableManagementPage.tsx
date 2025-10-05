@@ -2,12 +2,19 @@ import { Button, Flex, Space } from "antd"
 import React, { useEffect, useState } from "react"
 import styles from "./TableManagementPage.module.scss"
 import { ArrowLeftOutlined } from "@ant-design/icons"
-import { MenuCard, OrderCard, TableCard } from "../components"
+import {
+    FoodCatalog,
+    OrderDetailsView,
+    TableSelectionView,
+} from "../components"
 import type { TableItem } from "@shared/types/table"
 import { TableService } from "../services/TableService"
 import type { Order, OrderItem } from "@shared/types/order"
+import { useNavigate } from "react-router-dom"
 
 const TableManagementPage: React.FC = () => {
+    const navigate = useNavigate()
+
     const [selectedTable, setSelectedTable] = useState<TableItem | null>(null)
     const [orderOfTable, setOrderOfTable] = useState<Order | null>(null)
 
@@ -71,20 +78,21 @@ const TableManagementPage: React.FC = () => {
                     type="primary"
                     shape="circle"
                     size="small"
+                    onClick={() => navigate("/")}
                     icon={<ArrowLeftOutlined />}
                 />
                 <p className="text-base font-bold text-[#0088FF]">Quay lại</p>
             </Space>
             <Flex gap="middle" className="w-full">
                 <Flex vertical className="flex-1 min-w-0" gap="middle">
-                    <MenuCard onAddToCart={(food) => handleAddItem(food)} />
-                    <TableCard
+                    <FoodCatalog onAddToCart={(food) => handleAddItem(food)} />
+                    <TableSelectionView
                         selectedTable={selectedTable}
                         onTableSelect={setSelectedTable}
                     />
                 </Flex>
                 <div className="w-96">
-                    <OrderCard
+                    <OrderDetailsView
                         table={selectedTable}
                         orderOfTable={orderOfTable}
                         onQuantityChange={handleUpdateQuantity}

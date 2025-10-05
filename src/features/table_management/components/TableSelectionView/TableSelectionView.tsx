@@ -1,6 +1,6 @@
 import { Card, Col, Flex, Select, Tag, Typography } from "antd"
 import React, { useEffect, useState } from "react"
-import styles from "./TableCard.module.css"
+import styles from "./TableSelectionView.module.css"
 import type { TableItem } from "@shared/types/table"
 import { TableService } from "@features/table_management/services/TableService"
 
@@ -17,12 +17,12 @@ const statusColors: Record<TableItem["status"], string> = {
     Reserved: "bg-[#FF5F57]",
 }
 
-interface TableCardProps {
+interface TableSelectionViewProps {
     selectedTable: TableItem | null
     onTableSelect: (table: TableItem | null) => void
 }
 
-export const TableCard: React.FC<TableCardProps> = ({
+export const TableSelectionView: React.FC<TableSelectionViewProps> = ({
     selectedTable,
     onTableSelect,
 }) => {

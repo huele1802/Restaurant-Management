@@ -1,20 +1,20 @@
 import SearchInput from "@shared/components/SearchInput"
 import { Button, Card, Flex, Space, Spin } from "antd"
 import React from "react"
-import styles from "./MenuCard.module.css"
+import styles from "./FoodCatalog.module.css"
 import { LeftOutlined, RightOutlined } from "@ant-design/icons"
 import { useFoods } from "@features/table_management/hooks/useFoods"
 import {
-    FoodCard,
+    MenuItemCard,
     FoodCategoryTabs,
 } from "@features/table_management/components"
 import type { OrderItem } from "@shared/types/order"
 
-interface MenuCardProps {
+interface FoodCatalogProps {
     onAddToCart: (food: OrderItem) => void
 }
 
-export const MenuCard: React.FC<MenuCardProps> = ({onAddToCart}) => {
+export const FoodCatalog: React.FC<FoodCatalogProps> = ({ onAddToCart }) => {
     const { foods, loading } = useFoods()
 
     return (
@@ -51,7 +51,10 @@ export const MenuCard: React.FC<MenuCardProps> = ({onAddToCart}) => {
                                     flexShrink: 0,
                                 }}
                             >
-                                <FoodCard item={food} onAddToCart={onAddToCart} />
+                                <MenuItemCard
+                                    item={food}
+                                    onAddToCart={onAddToCart}
+                                />
                             </div>
                         ))}
                     </Flex>

@@ -10,21 +10,21 @@ import type { TableItem } from "@shared/types/table"
 import { Button, Card, Flex, Space, Typography } from "antd"
 import React, { useEffect, useState } from "react"
 import {
-    InformationOrder,
-    OrderItemForm,
+    OrderInfo,
+    OrderItemView,
     PaymentModal,
     TotalAmount,
 } from "@features/table_management/components"
 
 const { Text, Title } = Typography
 
-interface OrderCardProps {
+interface OrderDetailsViewProps {
     table: TableItem | null
     orderOfTable: Order | null
     onQuantityChange: (foodId: number, quantity: number) => void
 }
 
-export const OrderCard: React.FC<OrderCardProps> = ({
+export const OrderDetailsView: React.FC<OrderDetailsViewProps> = ({
     table,
     orderOfTable,
     onQuantityChange,
@@ -88,7 +88,7 @@ export const OrderCard: React.FC<OrderCardProps> = ({
                     <div>
                         <div className="mt-8 border border-dashed border-gray-300 w-full rounded-2xl">
                             {orderOfTable && (
-                                <InformationOrder
+                                <OrderInfo
                                     table={table.name}
                                     floor={table.floor}
                                     order={orderOfTable}
@@ -105,7 +105,7 @@ export const OrderCard: React.FC<OrderCardProps> = ({
                                 }}
                             >
                                 {orderOfTable?.items.map((item, idx) => (
-                                    <OrderItemForm
+                                    <OrderItemView
                                         key={idx}
                                         item={item}
                                         onQuantityChange={onQuantityChange}

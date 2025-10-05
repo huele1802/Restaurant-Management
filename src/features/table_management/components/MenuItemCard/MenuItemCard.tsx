@@ -6,12 +6,12 @@ import React, { useState } from "react"
 
 const { Text, Title } = Typography
 
-interface Props {
+interface MenuItemCardProps {
     item: FoodItem
     onAddToCart: (food: OrderItem) => void
 }
 
-export const FoodCard: React.FC<Props> = ({ item, onAddToCart }) => {
+export const MenuItemCard: React.FC<MenuItemCardProps> = ({ item, onAddToCart }) => {
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [selectedNote, setSelectedNote] = useState<string | null>(null)
 

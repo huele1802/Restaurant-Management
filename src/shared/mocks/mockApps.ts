@@ -11,7 +11,7 @@ import Shift from "@assets/icons/Horizontal_down_left_main.svg"
 
 export const mockApps = [
     { title: "Doanh thu", icon: Revenue, path: "/revenue" },
-    { title: "Thực đơn", icon: Menu, path: "/menu" },
+    { title: "Thực đơn", icon: Menu, path: "/table" },
     { title: "Hạ tầng", icon: Infrastructure, path: "/infrastructure" },
     { title: "Lương", icon: Salary, path: "/salary" },
     { title: "Kho", icon: Inventory, path: "/inventory" },

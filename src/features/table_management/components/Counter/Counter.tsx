@@ -13,7 +13,7 @@ type CounterProps = {
 export const Counter: React.FC<CounterProps> = ({
     value = 1,
     onChange,
-    min = 1,
+    min = 0,
     max = 99,
 }) => {
     const increase = () => {

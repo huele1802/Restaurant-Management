@@ -31,7 +31,7 @@ const GlobalHeader: React.FC = () => {
                         justify="flex-start"
                     >
                         <p className={styles.name}>Nguyễn Văn A</p>
-                        <span className={styles.role}>Admin</span>
+                        <span className={styles.role}>Bồi bàn</span>
                     </Flex>
                 </Flex>
                 <Flex gap="middle" align="center">
