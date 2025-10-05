@@ -125,7 +125,7 @@ export const TableSelectionView: React.FC<TableSelectionViewProps> = ({
                     <Col
                         onClick={() => onTableSelect(table)}
                         key={table.id}
-                        className={`size-24 flex items-center justify-center font-bold text-white 
+                        className={`size-28 flex items-center justify-center font-bold text-white 
                             ${statusColors[table.status]} 
                             ${selectedTable === table && "border-2 border-dashed border-black"}`}
                     >
