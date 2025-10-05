@@ -1,6 +1,6 @@
 import { DatePicker, Flex, Space, Typography } from "antd"
 import type React from "react"
-import styles from "./DashboardContent.module.scss"
+import styles from "./DashboardContent.module.css"
 import { useState } from "react"
 import { Dayjs } from "dayjs"
 import dayjs from "dayjs"

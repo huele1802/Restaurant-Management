@@ -1,5 +1,5 @@
 import { Badge, Flex } from "antd"
-import styles from "./GlobalHeader.module.scss"
+import styles from "./GlobalHeader.module.css"
 import SearchInput from "@shared/components/SearchInput"
 import avatar from "@/assets/images/User_cicrle.png"
 import { useState } from "react"

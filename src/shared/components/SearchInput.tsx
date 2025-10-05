@@ -1,7 +1,7 @@
 import { Input } from "antd"
 import React from "react"
 import userIcon from "@assets/icons/Search_alt.svg"
-import styles from "./SearchInput.module.scss"
+import styles from "./SearchInput.module.css"
 
 type InputSize = "small" | "middle" | "large"
 

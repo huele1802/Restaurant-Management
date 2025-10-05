@@ -1,6 +1,6 @@
 import { Card, Flex, Typography } from "antd"
 import React from "react"
-import styles from "./ApplicationButton.module.scss"
+import styles from "./ApplicationButton.module.css"
 import { useNavigate } from "react-router-dom"
 
 const { Title } = Typography

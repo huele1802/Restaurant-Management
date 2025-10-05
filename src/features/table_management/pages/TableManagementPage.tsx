@@ -1,6 +1,6 @@
 import { Button, Flex, Space } from "antd"
 import React, { useEffect, useState } from "react"
-import styles from "./TableManagementPage.module.scss"
+import styles from "./TableManagementPage.module.css"
 import { ArrowLeftOutlined } from "@ant-design/icons"
 import {
     FoodCatalog,

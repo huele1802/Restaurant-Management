@@ -1,6 +1,6 @@
 import { Flex } from "antd"
 import type React from "react"
-import styles from "./DashboardPage.module.scss"
+import styles from "./DashboardPage.module.css"
 import { DashboardContent } from "../components"
 
 const DashboardPage: React.FC = () => {

@@ -1,7 +1,7 @@
 import { Button, Card, Space } from "antd"
 import React from "react"
 import type { Dayjs } from "dayjs"
-import styles from "./InventoryReport.module.scss"
+import styles from "./InventoryReport.module.css"
 import { DoubleRightOutlined } from "@ant-design/icons"
 import { InventoryChart } from "@features/dashboard/components"
 
