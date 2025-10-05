@@ -1,0 +1,17 @@
+.customCard :global(.ant-card-head) {
+    background-color: #5296E5;
+    padding-inline: 30px;
+}
+
+ /* .customCard {
+    
+ } */
+
+.hideScrollbar {
+  -ms-overflow-style: none;  /* IE và Edge */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.hideScrollbar::-webkit-scrollbar {
+  display: none;             /* Chrome, Safari */
+}

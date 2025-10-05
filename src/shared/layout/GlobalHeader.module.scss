@@ -1,0 +1,33 @@
+.container {
+    height: 100%;
+}
+
+.logo {
+    font-size: 36px;
+    line-height: 100%;
+    color: #0088FF;
+}
+
+.role {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FEBC2F;
+    height: 22px;
+    width: 79px;
+    border-radius: 999px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.accountContainer {
+    padding-right: 24px;
+    border-right: 1px solid #CFCFCF;
+}

@@ -1,0 +1,17 @@
+.customChartCard {
+    background-color: #FEFEFE;
+    border: 1px solid #D5D5D5;
+}
+
+.customChartCard :global(.ant-card-body) {
+    padding: 14px;
+}
+
+.customCard {
+    background-color: #F8F8F8;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.customCard :global(.ant-card-body) {
+    padding: 24px 14px 18px;
+}

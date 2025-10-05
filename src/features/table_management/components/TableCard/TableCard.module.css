@@ -1,0 +1,56 @@
+.customCard {
+    padding-inline: 15px;
+}
+
+.customCard :global(.ant-card-head) {
+    background-color: #fff;
+    color: black;
+}
+
+.separationCard {
+    border-bottom: 1px solid #DFDEDE;
+    padding-bottom: 10px;
+}
+
+.selectingText,
+.statusText {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.selectingText {
+    color: #5296E5;
+}
+
+.selectingTable,
+.statusCount {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 999px;
+    padding: 2px;
+    color: #fff;
+    font-weight: bold;
+    height: 28px;
+    width: 28px;
+}
+
+.selectingTable {
+    background: #5296E5;
+}
+
+.statusCount {
+    margin-right: 10px;
+
+    &.available {
+        background: #5296E5;
+    }
+
+    &.occupied {
+        background: #C4C4C4;
+    }
+
+    &.reserved {
+        background: #FF5F57;
+    }
+}
